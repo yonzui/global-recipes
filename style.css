@@ -1,0 +1,55 @@
+.site {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "navbar navbar" "sidebar main" "sidebar footer";
+}
+
+.bodyHome {
+
+    margin: 2% 20% 10%;
+}
+
+.bodyHome nav {
+    top: 0;
+    position:sticky;
+    grid-area: navbar;
+    background-color: blueviolet;
+}
+
+.bodyHome aside {
+    top: 18.4px;
+    position: sticky;
+    align-self: start;
+    background-color: orchid;
+    grid-area: sidebar;
+}
+
+.bodyHome main {
+    grid-area: main;
+    font-size: 1.5em;
+}
+
+.bodyHome main p {
+    position: sticky;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 300px;  
+}
+
+.bodyHome footer {
+    grid-area: footer;
+    padding: 2em;
+    background-color: plum;
+}
+
+.dailyQuiz {
+    background-color: lightpink;
+    float:left;
+}
+.bodyHome main img {
+    float: right;
+    width: 25%;
+}
