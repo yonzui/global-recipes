@@ -20,7 +20,6 @@
 }
 
 .bodyHome {
-
     background-image: url("ASSETS/ka02-bg-simple.gif");
     background-color:rgb(255, 250, 243);
     margin: 2% 20% 10%;
@@ -31,23 +30,28 @@
     height: 200px;
     position:sticky;
     grid-area: navbar;
-    background-color: blueviolet;
+    background-image: url("ASSETS/banner.png");
 }
 
 .bodyHome aside {
+    border-top: 2px solid;
+    border-right: 2px solid;
     border-radius: 0 0 0 30px;
     overflow: hidden;
     min-height: 105vh;
     position: sticky;
     align-self: start;
-    background-color: orchid;
+    background-color: rgb(255, 250, 243);
     grid-area: sidebar;
 
 }
 
 .bodyHome main {
+
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: rgb(255, 250, 243);
     grid-area: main;
-    font-size: 1.5em;
     overflow: hidden;
 }
 
@@ -56,6 +60,7 @@
     overflow: hidden;
     overflow-y: scroll;
     height: 250px;  
+    margin-right: 5%;
 }
 
 .bodyHome footer {
@@ -69,6 +74,21 @@
 .bodyHome main img {
     float: right;
     width: 25%;
+}
+
+/* TEXT STYLING  */
+
+.introH1 h1 {
+    margin: 1% 5% 1% 5%;
+    font-size: 3em;
+}
+
+.introH1 p {
+    border: 2px dashed;
+    background-image:url("ASSETS/cloth2.gif");
+    margin: 0 0 0 5%;
+    padding: 4%;
+    font-size: 1.25em;
 }
 
 /* MAIN SITE AND HOME STYLING END */ 
@@ -90,11 +110,12 @@
 }
 
 .img {
-    background-image: url("ASSETS/frill.gif");
+    background-image: url("ASSETS/c05-bg-cloth.gif");
 }
 
 .img2 {
-    background-image: url("ASSETS/frill.gif");
+    background-image: url("ASSETS/c05-bg-cloth.gif");
+    padding: 105%;
 }
 
 
@@ -108,11 +129,13 @@ ul {
     list-style: none;
     background: green;
     padding: 0;
+
 }
 
 .navList ul li a {
     text-decoration: none;
     background-color: brown;
+
 }
 
 ul li ul.dropdown li {
@@ -137,4 +160,8 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
+.navList li a {
+    border: 2px dashed;
+    
+}
 /* DROPDOWN */
