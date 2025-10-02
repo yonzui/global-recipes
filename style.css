@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "cafe";
+    src: url("ASSETS/cafe.ttf");
+}
+
+
+
 /* MAIN SITE AND HOME STYLING */
 
 .site {
+    font-family: "cafe";
     background-color: pink;
     display: grid;
     border: 2px solid black;
@@ -13,8 +21,8 @@
 
 .bodyHome {
 
-    background-image: url("ASSETS/homeBG.gif");
-    background-color:rgb(255, 249, 240);
+    background-image: url("ASSETS/ka02-bg-simple.gif");
+    background-color:rgb(255, 250, 243);
     margin: 2% 20% 10%;
 }
 
@@ -87,67 +95,46 @@
 
 .img2 {
     background-image: url("ASSETS/frill.gif");
-    min-height: 94.5vh;
 }
 
 
 
+
+/* SIDEBAR & DROPDOWN */
+
+
+ul {
+    text-align: center;
+    list-style: none;
+    background: green;
+    padding: 0;
+}
+
+.navList ul li a {
+    text-decoration: none;
+    background-color: brown;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: royalblue;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: red;
+
+}
+
+ul li:hover ul.dropdown {
+
+    display: block;
+}
 
 /* DROPDOWN */
-
-.navList{
-    box-sizing: border-box;
-    height:100vh;
-
-}
-
-
-.navList a, .navList .dropdownBtn {
-    border-radius: 30px;
-    text-decoration: none;
-    color: aqua;
-    display: flex;
-    align-items: center;
-}
-
-.navList svg {
-
-    fill:red;
-}
-
-.navList li a:hover{
-    background-color: white;
-}
-
-/* TRANSITION */
-
-.navList .submenu:first-child{
-    display: grid;
-    transition: 300ms ease-in-out;
-    grid-template-rows: 0fr;
-
-    > div {
-        overflow:  hidden;
-    }
-}
-
-.navList .submenu.show {
-    grid-template-rows: 1fr;
-}
-
-
-
-/* TRANSITION END */
-
-
-.navList li {
-    list-style: none;
-}
-
-.dropdownBtn {
-    width: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
