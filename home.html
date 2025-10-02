@@ -1,153 +1,78 @@
-/* MAIN SITE AND HOME STYLING */
 
-.site {
-    background-color: pink;
-    display: grid;
-    border: 2px solid black;
-    border-radius: 30px 30px 30px 30px;
-    grid-template-columns: 200px 1fr;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "navbar navbar" "sidebar main" "sidebar footer";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>global recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body class="bodyHome">
 
-.bodyHome {
+    <div class="site">
+        <nav>nav</nav>
+        <aside>
+            <div class="img"><img></div>
 
-    background-image: url("ASSETS/homeBG.gif");
-    background-color:rgb(255, 249, 240);
-    margin: 2% 20% 10%;
-}
+            <div class="navList">
+                <li><a href="home.html">home</li>
 
-.bodyHome nav {
-    border-radius: 30px 30px 0 0;
-    height: 200px;
-    position:sticky;
-    grid-area: navbar;
-    background-color: blueviolet;
-}
+                <li>
+                    <button onclick="toggleSubMenu(this)" class="dropdownBtn">
+                        <span class="dropdown">cuisines</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+                    </button>
 
-.bodyHome aside {
-    border-radius: 0 0 0 30px;
-    overflow: hidden;
-    min-height: 105vh;
-    position: sticky;
-    align-self: start;
-    background-color: orchid;
-    grid-area: sidebar;
-
-}
-
-.bodyHome main {
-    grid-area: main;
-    font-size: 1.5em;
-    overflow: hidden;
-}
-
-.introduction {
-    position: sticky;
-    overflow: hidden;
-    overflow-y: scroll;
-    height: 250px;  
-}
-
-.bodyHome footer {
-    border-radius: 0 0 30px 0;
-    grid-area: footer;
-    padding: 2em;
-    background-color: plum;
-}
-
-
-.bodyHome main img {
-    float: right;
-    width: 25%;
-}
-
-/* MAIN SITE AND HOME STYLING END */ 
+                    <ul class="submenu">
+                        <div>
+                        <li><a href="#">american</a></li>
+                        <li><a href="#">british</a></li>
+                        <li><a href="#">chinese</a></li>
+                        <li><a href="#">filipino</a></li>
+                        <li><a href="#">hawaiian</a></li>
+                        <li><a href="#">indian</a></li>
+                        <li><a href="#">japanese</a></li>
+                        <li><a href="#">korean</a></li>
+                        <li><a href="#">mediterranean</a></li>
+                        <li><a href="#">spanish</a></li>
+                        <li><a href="#">swedish</a></li>
+                        </div>
+                    </ul>
+                </li>       
+               
 
 
 
+            </div>
 
-
-/* PERSONALITY QUIZ */
-
-.dailyQuiz {
-    margin:0 ;
-    background-color: lightpink;
-    float:left;
-    overflow:hidden;
-    overflow-y:scroll;
-    height: 100px;
-    width: 500px;
-}
-
-.img {
-    background-image: url("ASSETS/frill.gif");
-}
-
-.img2 {
-    background-image: url("ASSETS/frill.gif");
-    min-height: 94.5vh;
-}
+            <div class="img2"><img></div>
+        </aside>
+        
+        <main>
+            <h1>cook, cook, cook!</h1>
+            <div class="introduction">
+                <p>welcome to my recipe book! craving american? indian? scottish? look no further! i've gathered more than 30 recipes from around the world, each sorted into its place of origin. this site has a recipe that anyone is guranteed to enjoy!
+                    <br><br>updates:
+                    <br><br>10-10-2025: added recipes to asian category
+                    <br><br>10-3-2025: added european categories
+                    <br><br>10-2-2025: added american & asian categories
+                    <br><br>10-1-2025: start of site development!
+                </p>
+            </div>
 
 
 
+            <div class="dailyQuiz"> 
+                <h1>personality quiz</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum vero nesciunt quibusdam pariatur qui magnam nulla atque dolores, impedit eveniet quam corporis deleniti incidunt delectus? Eius qui recusandae quas.</p>
+            </div>
+            
+            <img class="homeImg" src="ASSETS/chiikawa.png">
 
-/* DROPDOWN */
-
-.navList{
-    box-sizing: border-box;
-    height:100vh;
-
-}
-
-
-.navList a, .navList .dropdownBtn {
-    border-radius: 30px;
-    text-decoration: none;
-    color: aqua;
-    display: flex;
-    align-items: center;
-}
-
-.navList svg {
-
-    fill:red;
-}
-
-.navList li a:hover{
-    background-color: white;
-}
-
-/* TRANSITION */
-
-.navList .submenu:first-child{
-    display: grid;
-    transition: 300ms ease-in-out;
-    grid-template-rows: 0fr;
-
-    > div {
-        overflow:  hidden;
-    }
-}
-
-.navList .submenu.show {
-    grid-template-rows: 1fr;
-}
+        </main>
+        <footer>footer</footer>
+    </div>
 
 
-
-/* TRANSITION END */
-
-
-.navList li {
-    list-style: none;
-}
-
-.dropdownBtn {
-    width: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
+</body>
+</html>
