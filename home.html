@@ -5,20 +5,21 @@
     <meta charset="UTF-8" />
     <title>global recipes</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body class="bodyHome">
 
     <div class="site">
-        <nav>nav</nav>
+        <nav></nav>
         <aside>
             <div class="img"><img></div>
 
             <ul class="navList">
+
                 <li><a href="home.html">home</li>
 
                 <li>
-                    <a href="#">countries ↓</a>
+                    <a href="#">cuisines ↓</a>
+
                     <ul class="dropdown">
                         <li><a href="#">american</a></li>
                         <li><a href="#">british</a></li>
@@ -39,9 +40,9 @@
         </aside>
         
         <main>
-            <h1>cook, cook, cook!</h1>
+            <h1 class="introH1">cook, cook, cook! 🥐 🍳 🌽 </h1>
             <div class="introduction">
-                <p>welcome to my recipe book! craving american? indian? scottish? look no further! i've gathered more than 30 recipes from around the world, each sorted into its place of origin. this site has a recipe that anyone is guranteed to enjoy!
+                <p class="introP">welcome to my recipe book! craving american? indian? mediterranean? look no further! i've gathered more than 30 recipes from around the world, each sorted into its place of origin. this site has a recipe that anyone is guranteed to enjoy!
                     <br><br>updates:
                     <br><br>10-10-2025: added recipes to asian category
                     <br><br>10-3-2025: added european categories
@@ -51,18 +52,57 @@
             </div>
 
 
+            <h1 class="quizMainH1">❓ quiz of the day</h1>
+
 
             <div class="dailyQuiz"> 
-                <h1>personality quiz</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum vero nesciunt quibusdam pariatur qui magnam nulla atque dolores, impedit eveniet quam corporis deleniti incidunt delectus? Eius qui recusandae quas.</p>
+                <h2>what dessert would i make you?</h2>
+
+                <div class="question">
+                <h4>1. what dessert would you have with ice cream?</h4>
+                
+                    <div class="answer-choice">
+                        <input type="radio" name="question1"> pie
+                        <input type="radio" name="question1"> brownies
+                        <input type="radio" name="question1"> cake
+                    </div>
+                </div>
+
+                <div class="question">
+                <h4>which type of candy is your favorite?</h4>
+
+                    <div class="answer-choice">
+                        <input type="radio" name="question2"> chocolate
+                        <input type="radio" name="question2"> fruity
+                        <input type="radio" name="question2"> buttery
+                    </div>
+                </div>
+
+                <div class="question">
+                <h4>pick a cuisine.</h4>
+
+                    <div class="answer-choice">
+                        <input type="radio" name="question3" id=""> american
+                        <input type="radio" name="question3"> latin american
+                        <input type="radio" name="question3"> asian
+                        <input type="radio" name="question3"> european
+                        <input type="radio" name="question3"> african
+
+                    </div>
+                </div>
+                    
+                
+
+
+
             </div>
             
-            <img class="homeImg" src="ASSETS/chiikawa.png">
 
         </main>
         <footer>footer</footer>
     </div>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
