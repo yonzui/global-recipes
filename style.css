@@ -9,7 +9,7 @@
 
 .site {
     font-family: "cafe";
-    background-color: pink;
+    background-image: url("ASSETS/cloth2.gif");
     display: grid;
     border: 2px solid black;
     border-radius: 30px 30px 30px 30px;
@@ -41,7 +41,7 @@
     min-height: 105vh;
     position: sticky;
     align-self: start;
-    background-color: rgb(255, 250, 243);
+    background-image: url("ASSETS/cloth2.gif");
     grid-area: sidebar;
 
 }
@@ -56,11 +56,12 @@
 }
 
 .introduction {
+    border: 2px dashed;
     position: sticky;
     overflow: hidden;
     overflow-y: scroll;
     height: 250px;  
-    margin-right: 5%;
+    margin: 2% 5% 0 5%;
 }
 
 .bodyHome footer {
@@ -71,24 +72,19 @@
 }
 
 
-.bodyHome main img {
-    float: right;
-    width: 25%;
-}
 
 /* TEXT STYLING  */
 
-.introH1 h1 {
+main .introH1  {
     margin: 1% 5% 1% 5%;
     font-size: 3em;
 }
 
-.introH1 p {
-    border: 2px dashed;
+main .introP {
     background-image:url("ASSETS/cloth2.gif");
-    margin: 0 0 0 5%;
     padding: 4%;
     font-size: 1.25em;
+    margin: 0;
 }
 
 /* MAIN SITE AND HOME STYLING END */ 
@@ -99,36 +95,46 @@
 
 /* PERSONALITY QUIZ */
 
+
+/* h1  */ .quizMainH1 {
+    margin: 2% 0 0 5%;
+    font-size: 2em;
+}
+
 .dailyQuiz {
-    margin:0 ;
+    margin: 2% 0 0 5%;
     background-color: lightpink;
     float:left;
     overflow:hidden;
     overflow-y:scroll;
-    height: 100px;
+    height: 200px;
     width: 500px;
 }
 
-.img {
-    background-image: url("ASSETS/c05-bg-cloth.gif");
-}
-
-.img2 {
-    background-image: url("ASSETS/c05-bg-cloth.gif");
-    padding: 105%;
-}
 
 
 
 
 /* SIDEBAR & DROPDOWN */
 
+.img {
+    background-image: url("ASSETS/cloth2.gif");
+}
+
+.img2 {
+    background-image: url("ASSETS/cloth2.gif");
+    padding: 105%;
+}
 
 ul {
     text-align: center;
     list-style: none;
-    background: green;
     padding: 0;
+
+}
+
+ul li {
+        background-image: url("ASSETS/cloth2.gif");
 
 }
 
@@ -140,10 +146,11 @@ ul {
 
 ul li ul.dropdown li {
     display: block;
+
 }
 
 ul li ul.dropdown {
-    width: 100%;
+    width: 78.5%;
     background: royalblue;
     position: absolute;
     z-index: 999;
@@ -156,12 +163,17 @@ ul li a:hover {
 }
 
 ul li:hover ul.dropdown {
-
     display: block;
 }
 
-.navList li a {
+.navList li {
     border: 2px dashed;
+    margin: 0 10% 5% 10%;
     
 }
 /* DROPDOWN */
+
+
+
+/* IMAGES */
+
