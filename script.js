@@ -1,209 +1,45 @@
-var applepieScore = 0;
-var mangosagoScore = 0;
-var princesscakeScore = 0;
-var tiramisuScore = 0;
-var malvapuddingScore = 0;
-var brigadeirosScore = 0;
+const cardWrapper = document.querySelector('.card-wrapper')
+const widthToScroll = cardWrapper.children[0].offsetWidth
+const arrowPrev = document.querySelector('.arrow.prev')
+const arrowNext = document.querySelector ('.arrow.next')
+const cardBounding = cardWrapper.getBoundingClientRect()
+const cardImageAndLink = cardWrapper.querySelectorAll('img, a')
+let currScroll = 0
+let initPos = 0
+let clicked = false
 
-var questionCount = 0;
+cardImageAndLink.forEach(item=> {
+    item.setAttribute('draggable', false)
+})
 
-var result = document.getElementById("result");
+arrowPrev.onclick = function() {
+    cardWrapper.scrollLeft -= widthToScroll
+}
 
-var q1a1 = document.getElementById("q1a1");
-var q1a2 = document.getElementById("q1a2");
-var q1a3 = document.getElementById("q1a3");
-    q1a1.addEventListener("click", function() {
-        applepieScore += 1;
-        mangosagoScore +=1;
-        malvapuddingScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-    q1a2.addEventListener("click", function() {
-        tiramisuScore +=1;
-        brigadeirosScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
+arrowNext.onclick = function() {
+    cardWrapper.scrollLeft += widthToScroll
+}
 
-    q1a3.addEventListener("click", function() {
-        princesscakeScore +=1;
-        tiramisuScore +=1;
-        malvapuddingScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
+cardWrapper.onmousedown = function(e) {
+    cardWrapper.classList.add('grab')
+    initPos = e.clientX - cardBounding.left
+    currScroll = cardWrapper.scrollLeft
+    clicked = true
+}
 
-var q2a1 = document.getElementById("q2a1");
-var q2a2 = document.getElementById("q2a2");
-var q2a3 = document.getElementById("q2a3"); 
-    q2a1.addEventListener("click", function() {
-        applepieScore +=1;
-        princesscakeScore +=1;
-        brigadeirosScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
+cardWrapper.onmousemove = function(e) {
+    if(clicked) {
+        const xPos = e.clientX - cardBounding.left
+        cardWrapper.scrollLeft = currScroll + -(xPos - initPos)
 
-    q2a2.addEventListener("click", function() {
-        applepieScore +=1;
-        mangosagoScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-
-    q2a3.addEventListener("click", function() {
-        applepieScore +=1;
-        princesscakeScore +=1;
-        malvapuddingScore +=1;
-        tiramisuScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-
-var q3a1 = document.getElementById("q3a1");
-var q3a2 = document.getElementById("q3a2");
-var q3a3 = document.getElementById("q3a3");
-var q3a4 = document.getElementById("q3a4");
-var q3q3 = document.getElementById("q3a5");
-    q3a1.addEventListener("click", function() {
-        applepieScore +=1;
-        tiramisuScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-
-    q3a2.addEventListener("click", function() {
-        mangosagoScore +=1;
-        brigadeirosScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-
-    q3a3.addEventListener("click", function() {
-        mangosagoScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-
-    q3a4.addEventListener("click", function() {
-        applepieScore +=1; 
-        princesscakeScore +=1;
-        tiramisuScore +=1;
-        questionCount +=1;
-        checkResult +=1;
-    });
-
-    q3a5.addEventListener("click", malvapudding);
-
-function applepie(){
-    applepieScore += 1;
-
-    console.log("questionCount = " +  questionCount + " applepieScore = " + applepieScore);
-
-    if (questionCount == 3) {
-    console.log("apple pie! yum.");
-    updateResult ();
     }
 }
 
-function mangosago(){
-    mangosagoScore += 1;
+cardWrapper.onmouseup = mouseUpAndLeave
+cardWrapper.onmouseleave = mouseUpAndLeave
 
-    console.log("questionCount = " + questionCount + " mangosagoScore = " + mangosagoScore);
 
-    if (questionCount == 3) {
-    console.log("mango sago? refreshing!");
-    updateResult ();
-    }
+function mouseUpAndLeave() {
+    cardWrapper.classList.remove('grab')
+    clicked = false
 }
-
-function princesscake(){
-    princesscakeScore += 1;
-
-    console.log("questionCount = " + questionCount + " princesscakeScore = " + princesscakeScore);
-
-    if (questionCount == 3) {
-    console.log("princess cake? ooo la la!");
-    updateResult ();
-    }
-}
-
-function tiramisu(){
-    tiramisuScore += 1;
-
-    console.log("questionCount = " + questionCount + " tiramisuScore = " + tiramisuScore);
-
-    if (questionCount == 3) {
-    console.log("tiramisu! yum.");
-    updateResult ();
-    }
-}
-
-
-function malvapudding(){
-    malvapuddingScore += 1;
-
-    console.log("questionCount = " + questionCount + " malvapuddingScore = " + malvapuddingScore);
-
-    if (questionCount == 3) {
-    console.log("malva pudding! delicious.");
-    updateResult ();
-    }
-}
-
-function brigadeiros(){
-    brigadeirosScore += 1;
-
-    console.log("questionCount = " + questionCount + " brigadeirosScore = " + brigadeirosScore);
-
-    if (questionCount == 3) {
-    console.log("brigadeiros! yummy.");
-    updateResult ();
-    }
-}
-
-
-function updateResult(){
-    if (applepieScore >= 2) {
-        result.innerHTML = "apple pie? yum!";
-        console.log("apple pie? yum!");
-    }   else if (mangosagoScore >=2) {
-        result.innerHTML = "mango sago? refreshing!";
-        console.log("mango sago? refreshing!");
-    }   else if (princesscakeScore >=2) {
-        result.innerHTML = "princess cake? ooo la la!";
-        console.log("princess cake? ooo la la!");
-    }   else if (tiramisuScore >=2) {
-        result.innerHTML = "tiramisu! yum.";
-        console.log("tiramisu! yum.");
-    }   else if (malvapuddingScore >=2) {
-        result.innerHTML = "malva pudding! delicious.";
-        console.log("malva pudding! delicious.");
-    } else if (brigadeirosScore >=2) {
-        result.innerHTML = "brigadeiros! yummy.";
-        console.log("brigadeiros! yummy");
-    }
-}
-
-function checkResult() {
-    if (questionCount === 3) {
-        updateResult();
-    }
-}
-
-
-function restartQuiz(){
-    result.innerHTML = "i'd give you...";
-    applepieScore = 0;
-    mangosagoScore = 0;
-    princesscakeScore = 0;
-    tiramisuScore = 0;
-    malvapuddingScore = 0;
-    brigadeirosScore = 0;
-    questionCount = 0;
-}
-
-
-
-    
