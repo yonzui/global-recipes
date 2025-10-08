@@ -214,15 +214,35 @@ ul li:hover ul.dropdown {
     width: 90%;
 }
 .card-wrapper {
+    align-items: center;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 280px;
     overflow-x: scroll;
-    padding: 20px;
+    padding: 25px;
     gap: 20px;
     font-size: 13px;
+    cursor: grab;
+    scroll-behavior: smooth;
+    scroll-snap-type: x;
+    scroll-padding-inline: 24px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin-left: 4.5%;
+    width: 600px;
 }
 
+
+.card-wrapper::webkit-scrollbar {
+    display: none;
+}
+
+    .card-wrapper.grab {
+        cursor:grabbing;
+        user-select: none;
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
 
 .card-item {
     background-image: url("ASSETS/cloth2.gif");
@@ -239,6 +259,7 @@ ul li:hover ul.dropdown {
 }
 
 .card-info {
+    min-height: 140px;
     padding: 16px;
 }
 
@@ -273,12 +294,13 @@ ul li:hover ul.dropdown {
     }
 
     .arrow.prev {
-        left: 35px;
+        left: 45px;
     }
 
     .arrow.next {
-        right: 0;
+        right: -20px;
     }
+
 
 
 /* SLIDER: END */
