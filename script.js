@@ -68,17 +68,28 @@ function mouseUpAndLeave() {
 
 // QUICKVIEW START
 
-const openBtn = document.getElementById("openModal");
-const closeBtn = document.getElementById("closeModal");
-const modal = document.getElementById("modal");
+let previewContainer = document.querySelector('.products-preview');
+let previewBox = previewContainer.querySelectorAll('.preview');
 
-openBtn.addEventListener("click", () => {
-    modal.classList.add("open");
+document.querySelectorAll('.card-wrapper .card-item').forEach(carditem => {
+    carditem.onclick = () => {
+        previewContainer.style.display = 'flex';
+        let name = carditem.getAttribute('data-name');
+        previewBox.forEach(preview => {
+            let target = preview.getAttribute('data-target');
+            if(name == target){
+                preview.classList.add('active');
+            }
+        });
+    };
 });
 
-closeBtn.addEventListener("click", () => {
-    modal.classList.remove("open");
-});
+previewBox.forEach(close => {
+    close.querySelector('.fa-times').onclick = () => {
+        close.classList.remove('active');
+        previewContainer.style.display = 'none';
+    }
+})
 
 
 
