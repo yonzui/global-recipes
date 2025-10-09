@@ -53,25 +53,23 @@
                 
                 <div class="card-wrapper">
 
-                    <div class="card-item">
+                    <div class="card-item" data-name="p-1">
                         <img src="ASSETS/burger.jpg">
                         <div class="card-info">
-
-                                <a href="#" id="openModal" class="card-title">deluxe burgers</a>
-
+                            <a href="#" class="card-title">deluxe burgers</a>
                             <p class="cardDescription">an american classic.</p>
                         </div>
                     </div>
 
 
-                    <div class="card-item">
+                    <div class="card-item" data-name="p-2">
                         <img src="ASSETS/macncheese.jpg">
                         <div class="card-info">
                             <a href="#" class="card-title">mac 'n cheese</a>
                             <p class="cardDescription">a blend of cheese & boiled macaroni. perfect for those cozy nights. </p>
                         </div>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-name="p-3">
                         <img src="ASSETS/hotdog.jpg">
                         <div class="card-info">
                             <a href="#" class="card-title">hot dogs</a>
@@ -79,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="card-item">
+                    <div class="card-item" data-name:="p-4">
                         <img src="ASSETS/bananapudding.jpg">
                         <div class="card-info">
                             <a href="#" class="card-title">banana pudding</a>
@@ -90,19 +88,67 @@
                 </div>
             </div>
 
+            <div class="products-preview">
 
+                <div class="preview active" data-target="p-1">
+                    <svg class="fas fa-times" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    
+                    <div class="column1">
+                        <img src="ASSETS/burger.jpg">
+                        <p class="ingredients">ingredient list: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum enim sunt similique eum nesciunt ipsam et tempora officiis id voluptatibus eius fuga inventore alias corrupti, amet atque magni commodi repudiandae!</p>
+                    </div>
 
-            <div class="modal" id="modal">
-                <div class="modal-inner">
-                    <h2>hello i will put recipe info here</h2>
+                    <div class=column2>
+                        <h3>recipe:</h3>
+                        <p class="instructions">instructions:  lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium possimus officiis modi laborum, a unde, nulla veritatis cupiditate distinctio magnam delectus? Praesentium dignissimos tempora dolorem eum quas assumenda numquam minima.</p>
+                    </div>
                 </div>
-                <button id="closeModal">close</button>
+
+                <div class="preview active" data-target="p-2">
+                    <svg class="fas fa-times" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    
+                    <div class="column1">
+                        <img src="ASSETS/macncheese.jpg">
+                        <p class="ingredients">ingredient list: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum enim sunt similique eum nesciunt ipsam et tempora officiis id voluptatibus eius fuga inventore alias corrupti, amet atque magni commodi repudiandae!</p>
+                    </div>
+
+                    <div class=column2>
+                        <h3>recipe:</h3>
+                        <p class="instructions">instructions:  lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium possimus officiis modi laborum, a unde, nulla veritatis cupiditate distinctio magnam delectus? Praesentium dignissimos tempora dolorem eum quas assumenda numquam minima.</p>
+                    </div>
+                </div>
+
+                <div class="preview active" data-target="p-3">
+                    <svg class="fas fa-times" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    
+                    <div class="column1">
+                        <img src="ASSETS/hotdog.jpg">
+                        <p class="ingredients">ingredient list: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum enim sunt similique eum nesciunt ipsam et tempora officiis id voluptatibus eius fuga inventore alias corrupti, amet atque magni commodi repudiandae!</p>
+                    </div>
+
+                    <div class=column2>
+                        <h3>recipe:</h3>
+                        <p class="instructions">instructions:  lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium possimus officiis modi laborum, a unde, nulla veritatis cupiditate distinctio magnam delectus? Praesentium dignissimos tempora dolorem eum quas assumenda numquam minima.</p>
+                    </div>
+                </div>
+
+                <div class="preview active" data-target="p-4">
+                    <svg class="fas fa-times" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    
+                    <div class="column1">
+                        <img src="ASSETS/bananapudding.jpg">
+                        <p class="ingredients">ingredient list: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum enim sunt similique eum nesciunt ipsam et tempora officiis id voluptatibus eius fuga inventore alias corrupti, amet atque magni commodi repudiandae!</p>
+                    </div>
+
+                    <div class=column2>
+                        <h3>recipe:</h3>
+                        <p class="instructions">instructions:  lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium possimus officiis modi laborum, a unde, nulla veritatis cupiditate distinctio magnam delectus? Praesentium dignissimos tempora dolorem eum quas assumenda numquam minima.</p>
+                    </div>
+                </div>
 
             </div>
 
 
-
-            
 
         </main>
         <footer>footer</footer>
