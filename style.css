@@ -305,28 +305,91 @@ ul li:hover ul.dropdown {
 
 /* SLIDER: END */
 
-/* MODAL START */
+/* PREVIEW START */
 
-.modal {
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+.products-preview {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: none;
     align-items: center;
     justify-content: center;
     
 }
 
-    .modal.open {
-        opacity: 1;
-        z-index: 999s;
-        position: fixed;
+
+
+    .products-preview .preview {
+        border: 2px solid;
+        display: none;
+        padding:2rem;
+        text-align: center;
+        background-image: url("ASSETS/cloth2.gif");
+        position: relative;
+        margin: 2rem;
+        width: 40rem;
     }
 
-    .modal.close {
-        position: fixed;
+    .products-preview .preview.active {
+        display:inline-block;
+        max-height: 572px;
     }
+
+    .products-preview .preview img {
+    width: 80%;
+    border: 2px solid; 
+    }
+
+
+
+    .products-preview .preview .fa-times {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        color: black;
+    }
+
+    .products-preview .preview h3 {
+        padding: .5rem 0;
+        border: 2px solid;
+        background-color: rgb(255, 250, 243);
+        font-size: 2.5rem;
+    }
+
+    .products-preview .preview p {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        border: 2px dashed;
+        background-color: rgb(255, 250, 243);
+        color: black;
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x:hidden;
+    }
+
+.column1, .column2 {
+    float: left;
+    width: 50%;
+    margin-top: 4%;
+}
+
+    .column1 p {
+        margin-top: 16px;
+        height: 100px;
+        width: 81%;
+        margin-left: 29px;
+    }
+
+    .column2 h3 {
+        margin-top: 0;
+    }
+    .column2 p {
+        margin-top: -20px;
+        min-height: 357.5px;
+        max-height: 357.5;
+    }
+
