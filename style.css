@@ -314,8 +314,8 @@ ul li:hover ul.dropdown {
     min-height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, .5);
-    display: none;
     align-items: center;
+    display: none;
     justify-content: center;
     
 }
@@ -327,6 +327,8 @@ ul li:hover ul.dropdown {
         display: none;
         padding:2rem;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         background-image: url("ASSETS/cloth2.gif");
         position: relative;
         margin: 2rem;
@@ -362,7 +364,6 @@ ul li:hover ul.dropdown {
 
     .products-preview .preview p {
         padding: 1rem 0;
-        font-size: 1.5rem;
         border: 2px dashed;
         background-color: rgb(255, 250, 243);
         color: black;
@@ -382,7 +383,11 @@ ul li:hover ul.dropdown {
         height: 100px;
         width: 81%;
         margin-left: 29px;
+        font-size: 17px;
+
     }
+    
+
 
     .column2 h3 {
         margin-top: 0;
@@ -390,6 +395,8 @@ ul li:hover ul.dropdown {
     .column2 p {
         margin-top: -20px;
         min-height: 357.5px;
-        max-height: 357.5;
+        max-height: 357.5px;
     }
+
+
 
