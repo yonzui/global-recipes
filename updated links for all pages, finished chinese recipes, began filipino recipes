@@ -24,14 +24,14 @@
                         <li><a href="america.html">american</a></li>
                         <li><a href="british.html">british</a></li>
                         <li><a href="chinese.html">chinese</a></li>
-                        <li><a href="#">filipino</a></li>
-                        <li><a href="#">hawaiian</a></li>
-                        <li><a href="#">indian</a></li>
-                        <li><a href="#">japanese</a></li>
-                        <li><a href="#">korean</a></li>
-                        <li><a href="#">mediterranean</a></li>
-                        <li><a href="#">spanish</a></li>
-                        <li><a href="#">swedish</a></li>
+                        <li><a href="filipino.html">filipino</a></li>
+                        <li><a href="hawaiian.html">hawaiian</a></li>
+                        <li><a href="indian.html">indian</a></li>
+                        <li><a href="japanese.html">japanese</a></li>
+                        <li><a href="korean.html">korean</a></li>
+                        <li><a href="mediterranean.html">mediterranean</a></li>
+                        <li><a href="spanish.html">spanish</a></li>
+                        <li><a href="swedish.html">swedish</a></li>
                     </ul>
                 </li>       
             </ul>
@@ -125,9 +125,9 @@
                     <div class="column1">
                         <img src="ASSETS/mapotofu.jpg">
                         <p class="ingredients"><b>ingredient list:</b><br><br>
-                            <b>meat filling:</b><br>
+        
                             - 1/2 cup oil, <i>divided</i><br>
-                            - 1 thai bird chili pepper, <i>thinly sliced</i><br>
+                            - 1 fresh thai bird chili pepper, <i>thinly sliced</i><br>
                             - 6 dried red chilies, <i>rougly chopped</i><br>
                             - 1/2 tbsp sichaun peppercorn<br>
                             - 3 tbsp ginger, <i>minced</i><br>
@@ -135,34 +135,24 @@
                             - 8 oz ground pork<br>
                             - 1 tbsp spicy bean sauce<br>
                             - 2/3 cup low sodium chicken broth<br>
-                            - 1 lb silken tofu<br>
+                            - 1 lb silken tofu, <i>1in cubes</i><br>
                             - 1/4 cup water<br>
                             - 1 1/2 tsp cornstarch<br>
                             - 1/4 tsp seasame oil<br>
                             - 1/4 tsp sugar<br>
-                            - 1 scallion<br>
+                            - 1 green onion<br>
                         </p>
                     </div>
 
                     <div class=column2>
                         <h3>recipe:</h3>
                         <p class="instructions">
-                            <b>meat filling:</b><br>
-                            1. add oil to a large skillet over med-high heat. once pan is heated, add the onions and cook for 5 mins, stirring occasionally.<br><br>
-                            2. add the ground meat to the skillet, breaking it apart. add parsley, rosemary, thyme, salt, and pepper. stir well and occasionally, cooking for 6-8 mins, until the meat is browned.<br><br>
-                            3. add worcestershire sauce and garlic.stir to combine and cook for another minute.<br><br>
-                            4. add the flour and tomato paste. stir until combined, leaving no clumps of tomato paste.<br><br>
-                            5. add broth, peas, carrots, and corn. bring to a boil, then reduce to a simmer. simmer for 5 mins, stirring occasionally.
-                            6. remove from heat, and set the meat mixture aside.<br><br>
-
-                            <b>potato topping:</b><br>
-                            1. heat potatoes on high in a large pot, covering them with water. once boiling, reduce to a simmer and cook for 10-15 mins, until potatoes are fork tender.<br><br>
-                            2. drain potatoes. leave or return potatoes to the hot pot. let potatoes rest for 1 minute to evaporate remaining liquid.<br><br>
-                            3. add butter, half & half, garlic powder, salt, and pepper. mash potatoes, stirring until everything is combined.<br><br>
-                            4. add parmesen cheese. stir until combined.<br><br>
-
-                            <b>assembly:</b><br>
-                            pour meat mixture into a 9x9 inch baking dish. spread into an even layer. add mashed potatoes on top, spreading into another even layer.<br><br>
+                            <b>chili oil:</b><br> 
+                            1. heat a wok over low heat. add half the oil, and add the peppers. stir occasionally, heating until fragrant (~5 min). remove from heat once done.<br><br>
+                            <b>sauce:</b><br>
+                            2. heat the remaining half of the oil in the wok, over medium heat. add ginger, then wait a minute. add the garlic, frying that for another minute. turn the heat to high, adding the pork. break up the meat, frying it until it's cooked. add the sichuan peppercorns, stirring for about 20 seconds.<br><br>
+                            3. add in the spicy bean sauce and chicken broth, stirring well. let simmer for about a minute. while waiting, combine the water and cornstarch in a seperate bowl. add the cornstarch mixture to the sauce, stirring. let it bubble until the sauce begins to thicken.<br><br>
+                            4. add the premade chili oil, stirring into the sauce. add the tofu next, and gently coat the tofu in the sauce. let cook for 3-5 mins. add the seasame oil, sugar, and green onion, stirring until the green onion is wilted.<br><br>
                             enjoy!
                         </p>
                     </div>
@@ -174,7 +164,15 @@
                     <div class="column1">
                         <img src="ASSETS/eggtart.jpg">
                         <p class="ingredients"><b>ingredient list:</b><br>
-                        
+                        - 2 cups all-purpose flour<br>
+                        - 1/8 tsp salt <br>
+                        - 12 tbsp unsalted butter, <i>slightly softened</i>
+                        - 2 tbsp cold water<br>
+                        - 1/2 cup granulated sugar<br>
+                        - 1 cup hot water<br>
+                        - 1/2 cup evaportated milk<br>
+                        - 3 eggs<br>
+                        - 1 tsp vanilla extract<br>
 
                         </p>
                     </div>
@@ -182,12 +180,21 @@
                     <div class=column2>
                         <h3>recipe:</h3>
                         <p class="instructions">
-                            1. grill frankfurter over med-high heat. once it looks crispy, add dog into the bun. top with whatever ingredients you'd like!<br><br>
-                            <i>* chicago dogs use poppy seed hot dog buns.</i><br><br>
-                            <i><b>** onion sauce: <br></b>
-                            (2). drizzle a tsp of veggie oil over a small pan. add some some thinly sliced onion, and cook over medium heat, until onions are soft.<br><br>
-                            (3). add 1-2 tbsp of ketchup and 1/4 cup of water. stir for about 5-10 mins, or until the water is reduced to half. once finished, add a pinch of salt and cinnamon, then stir until combined.<br><br>
-                            </i>
+                            <b>dough:</b><br>
+                            1. combine flour and salt in a bowl. 
+                            2. cut butter into small cubes, adding it to the bowl. break up the butter with your fingers. it should have a coarse crumb texture, with small chunks of butter.<br><br>
+                            3. add in the water, bringing the dough together with your hands. add up to 3 more teaspoons of water if necessary. the dough should be scraggly and dry once done. wrap the dough tightly in plastic wrap, and chill for 20 minutes (this is necessary so that the flour absorbs mositure!).<br><br>
+                            4. after chilling, roll the dough into a 6x15in rectangle on a floured surface. fold the top third of the dough down to the center, then the bottom third up and over that. give the dough a quarter turn, and roll out again into a 6x15in rectangle. fold the same way as before, cover, and chill for another hour.<br><br>
+                            
+                            <b>filling:</b><br>
+                            5. make the filling while waiting. in a bowl, dissolve the sugar into 1 the hot water, and allow the mixture to cool to room temp. in a seperate bowl, whisk the evaporated milk, eggs, and vanilla together. add the milk mixture into the sugar water, whisking it thoroughly. strain this mixture through a fine meshed strainer, into a large measuring cup. there should be about 2 to 2 1/4 cups of custard.<br><br>
+
+                            <b>bake:</b><br>
+                            6. preheat oven to 375°F (190°C). position an oven rack to the lower third of the oven.<br><br>
+                            7. roll the dough about 0.2in thick. cut into 4in circles to fit into tart tins. leave a lip going over the top of the cup. take the excess dough, re-roll it, and cut more circles until you have about 16 of them.<br><br>
+                            8. fill the tart shells 3/4 full, or to the point where the lip of the dough starts curving outwards (if you have a lot of lip).<br><br>
+                            9. add the pan to the oven. reduce the heat to 350°F (180°C). bake for 26-29 mins, until the filling is set.<br><br>
+                            10. remove from oven and let sit for 10 mins.<br><br>
                             enjoy!
                         </p>
                     </div>
