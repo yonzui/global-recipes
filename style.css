@@ -118,7 +118,7 @@ main .introP {
     margin-left: 5%;
 }
 
-.answer-choice {
+.answer-choice, #restart {
     margin-left: 5%;
 }
 
@@ -145,27 +145,32 @@ ul {
 }
 
 ul li {
-        background-image: url("ASSETS/cloth2.gif");
+    
+    background-color: rgb(255, 250, 243);
 
 }
 
 .navList ul li a {
+    line-height: 30px;
     text-decoration: none;
-    background-color: brown;
-
+    color:black;
 }
 
 ul li ul.dropdown li {
     display: block;
-
+    background: rgb(255, 250, 243);
 }
 
 ul li ul.dropdown {
+    padding-top: 15px;
+    padding-bottom: 10px;
     width: 78.5%;
-    background: royalblue;
+    background-image: url("ASSETS/c05-bg-clothbrighter.gif");
     position: absolute;
     z-index: 999;
     display: none;
+    border: 2px solid;
+    
 }
 
 ul li a:hover {
@@ -178,9 +183,14 @@ ul li:hover ul.dropdown {
 }
 
 .navList li {
+    line-height: 30px;
     border: 2px dashed;
     margin: 0 10% 5% 10%;
     
+}
+
+.navList li a {
+    text-decoration: none;
 }
 /* DROPDOWN */
 
@@ -386,7 +396,7 @@ ul li:hover ul.dropdown {
         font-size: 17px;
 
     }
-    
+
 
 
     .column2 h3 {
