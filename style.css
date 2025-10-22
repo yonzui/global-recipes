@@ -101,7 +101,7 @@ main .introP {
     font-size: 2em;
 }
 
-.dailyQuiz {
+.quiz-container {
     margin: 2% 0 0 5%;
     background-color: lightpink;
     float:left;
@@ -114,13 +114,6 @@ main .introP {
     
 }
 
-.dailyQuiz h2, h4, h6 {
-    margin-left: 5%;
-}
-
-.answer-choice, #restart {
-    margin-left: 5%;
-}
 
 
 
@@ -150,10 +143,17 @@ ul li {
 
 }
 
+ul li:hover {
+    box-shadow: 1px 1px 5px rgb(95, 95, 95);
+}
+
 .navList ul li a {
     line-height: 30px;
     text-decoration: none;
-    color:black;
+}
+
+.navList a {
+    color: black;
 }
 
 ul li ul.dropdown li {
@@ -173,10 +173,6 @@ ul li ul.dropdown {
     
 }
 
-ul li a:hover {
-    background: red;
-
-}
 
 ul li:hover ul.dropdown {
     display: block;
