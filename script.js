@@ -1,5 +1,77 @@
 // QUIZ START
 
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+
+
+const myQuestions = [
+    {
+        question: "which of the following is an american recipe?",
+        answers: {
+            a: "halo-halo",
+            b: "fish and chips",
+            c: "mac and cheese"
+        },
+        correctAnswer: "c"
+    },
+
+    {
+        question: "which of these desserts known for its sweet sesame filling?",
+        answers: {
+            a: "ggultteok",
+            b: "princess cake",
+            c: "leche flan"
+        },
+        correctAnswer: "a"
+    },
+
+    {
+        question: "which of these recipes originates from an asian country?",
+        answers: {
+            a: "chocolate balls",
+            b: "guava cake",
+            c: "falooda"
+        },
+        correctAnswer: "c"
+    },
+
+    {
+        question: "which of the following is made with taro leaves?",
+        answers: {
+            a: "dolmas",
+            b: "squid luau",
+            c: "baklava"
+        },
+        correctAnswer: "b"
+    }
+];
+
+
+function buildQuiz(){
+    const output = [];
+    myQuestions.forEach(
+        (currentQuestion, questionNumber) => {
+            const answers = [];
+            for(letter in currentQuestion.answers){
+                answers.push(
+                    `<label>
+                        <input type="radio" name="questions${questionNumber}" value="${letter}">
+                        ${letter} :
+                        ${currentQuestion.answers[letter]}
+                    </label>`
+                );
+            }
+            output.push(
+                `<div class="question"> ${currentQuestion.question} </div>
+                <div class="answers"> ${answers.join('')} </div>`
+            );
+        }
+    );
+    quizContainer.innerHTML = output.join('');
+
+    
+}
 
 
 // QUIZ END
@@ -73,13 +145,13 @@ let previewBox = previewContainer.querySelectorAll('.preview');
 
 document.querySelectorAll('.card-wrapper .card-item').forEach(carditem => {
     carditem.onclick = () => {
-        previewContainer.style.display = 'flex';
+        previewContainer.style.display = 'grid';
         let name = carditem.getAttribute('data-name');
         previewBox.forEach(preview => {
             let target = preview.getAttribute('data-target');
             if(name == target){
-                preview.classList.add('active');
-            }
+                    preview.classList.add('active');
+                }
         });
     };
 });
@@ -90,8 +162,6 @@ previewBox.forEach(close => {
         previewContainer.style.display = 'none';
     }
 })
-
-
 
 
 // QUICKVIEW END
