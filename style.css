@@ -97,16 +97,17 @@ main .introP {
 
 
 /* h1  */ .quizMainH1 {
-    margin: 2% 0 0 5%;
+    margin: 3% 0 0 5%;
     font-size: 2em;
 }
 
 .quiz-container {
-    margin: 2% 0 0 5%;
+    margin: 2% 0 2% 5%;
     background-color: lightpink;
     float:left;
     overflow:hidden;
     overflow-y:scroll;
+    overflow-x: scroll;
     height: 200px;
     width: 500px;
     background-image: url("ASSETS/cloth2.gif");
@@ -403,6 +404,7 @@ ul li:hover ul.dropdown {
         min-height: 357.5px;
         max-height: 357.5px;
     }
+
 
 
 
