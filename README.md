@@ -1,5 +1,5 @@
 # about
-i developed a global recipe website with over 30 recipes from over 10 cuisines. i made this project because i thought it would be a cool idea, plus i'm really into cooking/baking! this was also made as apart of hackclub's athena award.
+i developed a global recipe website with over 30 recipes from over 10 cuisines. i made this project because i thought it would be a cool idea, plus i'm really into cooking/baking! this was also made as apart of hackclub's athena award.[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
 # development
 i made my project using html, javascript, and css in vscode. i collected some recipes from different websites (some of them being my own!), and sorted each into a different cuisine page.
