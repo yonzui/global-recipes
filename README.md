@@ -14,3 +14,5 @@ i made my project using html, javascript, and css in vscode. i collected some re
 4. there's also a bit of an issue surrounding the recipe cards. when i would click on them, they'd display each card and i was so confused. i managed to fix this, but then the issue was that you'd have to click the cards left to right in order to see the correct recipe.
 
 obviously there's still so much to fix with this, but i'm at a point where i feel like i can showcase this to other people. i'm def going to continue working on this though!
+
+# note: soo sorry for all the messy commits. i started working on this before figuring out how to make clean commits.
